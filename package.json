@@ -1,0 +1,17 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "ROJO 2 <hola@rojo2.com> (http://rojo2.com)",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.7.0",
+    "ora": "^0.3.0",
+    "osmosis": "^1.1.2"
+  }
+}
