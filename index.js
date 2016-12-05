@@ -18,7 +18,8 @@ const MeasurePointSchema = new mongoose.Schema({
 	level: Number,
 	intensitySat: Number,
 	error: String,
-	subarea: String
+	subarea: String,
+  created: Date
 });
 
 const MeasurePoint = mongoose.model("mp", MeasurePointSchema);
@@ -63,6 +64,9 @@ function update() {
 			if (typeof data.level === "string") {
 				data.level = parseInt(data.level, 10);
 			}
+      if (data.created === undefined) {
+        data.created = new Date();
+      }
 		})
 		.data((listing) => {
 
