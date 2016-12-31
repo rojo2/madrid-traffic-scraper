@@ -1,5 +1,6 @@
 const osmosis = require("osmosis");
 const mongoose = require("mongoose");
+const config = require("./config");
 const ora = require("ora");
 
 const URL = "http://informo.munimadrid.es/informo/tmadrid/pm.xml";
@@ -94,7 +95,7 @@ function update() {
 }
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/madrid-trafico").then(() => {
+mongoose.connect(config.MONGODB).then(() => {
 	request(0);
 }).catch((err) => {
 	console.error(err);
