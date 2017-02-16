@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start:docker": "if [ ! -d node_modules ]; then npm run install; fi; DEBUG=* nodemon index.js",
+    "start:docker": "if [ ! -d node_modules ]; then npm install; fi; DEBUG=* nodemon index.js",
     "start:watch": "DEBUG=* nodemon index.js",
     "test": "mocha --recursive",
     "test:watch": "mocha --recursive --watch"
