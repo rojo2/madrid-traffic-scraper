@@ -1,6 +1,6 @@
 # Madrid Traffic Scraper
 
-Este repositorio contiene el scraper encargado de obtener la información de los
+Este repositorio contiene el **scraper** encargado de obtener la información de los
 servicios de datos abiertos del Ayuntamiento de Madrid.
 
 ```sh
