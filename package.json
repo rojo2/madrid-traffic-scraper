@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:watch": "DEBUG=* nodemon index.js",
+    "test": "mocha --recursive",
+    "test:watch": "mocha --recursive --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "madrid",
+    "traffic",
+    "scraper"
+  ],
   "author": "ROJO 2 <hola@rojo2.com> (http://rojo2.com)",
   "license": "ISC",
   "dependencies": {
